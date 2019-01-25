@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppPruebaTecnica.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace AppPruebaTecnica
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnEstados_Click(object sender, EventArgs e)
+        {
+            frmEstados frm = new frmEstados();
+            frm.Show();
         }
     }
 }

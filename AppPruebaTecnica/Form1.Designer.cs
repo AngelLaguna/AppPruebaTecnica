@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnEstados = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnEstados
+            // 
+            this.btnEstados.Location = new System.Drawing.Point(68, 39);
+            this.btnEstados.Name = "btnEstados";
+            this.btnEstados.Size = new System.Drawing.Size(75, 23);
+            this.btnEstados.TabIndex = 0;
+            this.btnEstados.Text = "Estados";
+            this.btnEstados.UseVisualStyleBackColor = true;
+            this.btnEstados.Click += new System.EventHandler(this.btnEstados_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(598, 261);
+            this.Controls.Add(this.btnEstados);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnEstados;
     }
 }
 
